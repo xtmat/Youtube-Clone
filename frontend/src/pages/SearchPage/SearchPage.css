@@ -1,0 +1,16 @@
+.home-video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 7rem; */
+    column-gap: 10rem;
+    row-gap: 3rem;
+    justify-items: center;
+    margin-top: 5rem;
+}
+
+
+/* width: 100%;
+    padding-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start */
