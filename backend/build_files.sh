@@ -1,6 +1,8 @@
 echo "Build Start"
 
-pip install pipenv
-python3.9 -m pipenv install
+sudo apt install python3-pip
+python3 -m ensurepip
+python3 -m pip install pipenv
+python3 -m pipenv install
 
 echo "Build End"
