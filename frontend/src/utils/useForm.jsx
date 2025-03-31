@@ -18,7 +18,7 @@ const useForm = (callback) => {
   // const refresh = () => window.location.reload(true);
 
   async function updateComments() {
-    const response = await axios.get(`http://127.0.0.1:8000/api/comment/${id}`);
+    const response = await axios.get(`https://youtube-clone-backend-gamma.vercel.app/api/comment/${id}`);
     console.log(response.data);
     setComments(response.data);
   }
@@ -40,7 +40,7 @@ const useForm = (callback) => {
     try {
       axios
         .post(
-          `http://127.0.0.1:8000/api/comment/postto/${id}`,
+          `https://youtube-clone-backend-gamma.vercel.app/api/comment/postto/${id}`,
           {
             video_id: `${id}`,
             text: formValues.comment,
