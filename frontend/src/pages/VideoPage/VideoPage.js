@@ -2,7 +2,6 @@
 import "./VideoPage.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { KEY } from "../../localKey";
 import { useParams } from "react-router-dom";
 import { useContext } from "react";
 import CommentContext from "../../context/CommentContext";
@@ -11,6 +10,8 @@ import CommentContext from "../../context/CommentContext";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import Player from "../../components/Player/Player";
 import VidsSidebar from "../../components/VidsSidebar/VidsSidebar";
+
+const KEY  = process.env.REACT_APP_YOUTUBE_DATA_API_KEY;
 
 const VideoPage = () => {
   const [relatedVids, setRelatedVids] = useState([]);

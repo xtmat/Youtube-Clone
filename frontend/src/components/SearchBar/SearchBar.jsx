@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { KEY } from "../../localKey";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./SearchBar.css";
+
+const KEY  = process.env.REACT_APP_YOUTUBE_DATA_API_KEY;
 
 const SearchBar = ({ setVids }) => {
   const [query, setQuery] = useState("");

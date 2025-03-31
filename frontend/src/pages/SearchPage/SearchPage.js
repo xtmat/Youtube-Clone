@@ -3,10 +3,11 @@ import { useEffect, useState } from "react";
 import useAuth from "../../hooks/useAuth";
 import "./SearchPage.css";
 import VidCards from "../../components/VidCards/VidCards";
-import { KEY } from "../../localKey";
 import SearchBar from "../../components/SearchBar/SearchBar";
-
 import axios from "axios";
+
+
+const KEY  = process.env.REACT_APP_YOUTUBE_DATA_API_KEY;
 
 const SearchPage = () => {
   const [vids, setVids] = useState([]);
